@@ -7,3 +7,8 @@ console.log('-----------------');
 
 const files = require('./files');
 console.log(files.path);
+
+console.log('-----------------');
+
+const os = require('./operating_system');
+console.log(os.memory);
