@@ -5,8 +5,8 @@ logger.log('message'); // message
 
 console.log('-----------------');
 
-const files = require('./files');
-console.log(files.path);
+const path = require('./files');
+console.log(path.path);
 
 console.log('-----------------');
 
