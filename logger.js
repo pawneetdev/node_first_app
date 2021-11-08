@@ -1,9 +1,9 @@
-var url = 'http://mylogger.io/log';
+const EventEmitter = require('events');
 
-var log = function(message) {
-	// HTTP request to the logger URL
-	console.log(message);
+class Logger extends EventEmitter {
+	log = function(message) {
+		this.emit('notification', { id: 1, type: 'log', message: message });
+	}
 }
 
-// Making methods public to be used in other modules
-module.exports.log = log;
+module.exports = Logger;
